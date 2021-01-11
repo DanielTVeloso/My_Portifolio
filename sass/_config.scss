@@ -1,0 +1,47 @@
+$primary-color: #fff;
+$secondary-color: #85f569;
+$menu-color: #033d05;
+$gradient-color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(7,36,4,1) 0%, rgba(0,0,0,1) 100%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin media-sl {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

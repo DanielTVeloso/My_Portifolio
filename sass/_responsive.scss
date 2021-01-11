@@ -1,0 +1,242 @@
+@include media-sl {
+    .home {
+        padding-top: 20vh;
+
+        &__name {
+                font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+
+    .about {
+        &__name {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 0;
+            
+            &--last {
+                color: $secondary-color;
+                font-weight: 700;
+            }
+        }
+
+        &__container {
+            width: 42vh;
+            margin: 1rem auto;
+
+            &__item {
+                padding: 0.5rem 0.5rem;
+                background: lighten(#011303,3%);
+                margin: 1rem;
+                text-align: justify;
+                border-bottom:  5px solid $secondary-color;
+    
+                h2 {
+                    margin-bottom: 0.5rem;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+    
+                h3 {
+                    margin: 0.3rem 0;
+                    font-weight: 300;
+                    font-size: 1.0rem;
+                }
+                h4 {
+                    margin: 0.3rem 0;
+                    font-weight: 250;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        &__social-icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                position: relative;
+                padding-bottom: 2rem;
+                font-weight: 700;
+                text-align: center;
+                align-items: center;
+            
+                a {
+                    color: $primary-color;
+                    @include transition-ease;
+                    padding: 0.6rem 1.1rem;
+                }
+        }
+    }
+    .projects {
+        padding-top: 10vh;
+        padding-bottom: 4vh;
+
+        &__container {
+            width: 40vh;
+            padding-bottom: 26.6666667vh;
+        }
+
+        &__title {
+            font-size: 1.6rem;
+            text-align: center;
+            padding-left: 0rem;
+        }
+
+        &__image {
+            width: 30vh;
+            height: 20vh;
+            margin: 0 auto;
+            order: 0;
+        }
+
+        &__text {
+            order: 1;
+        }
+
+        &__links {
+            font-size: 0.58rem;
+        }
+
+        &__box1 {
+            grid-template-columns: 1fr;
+            grid-gap: 2.5rem 0;
+        }
+    
+        &__box2 {
+            grid-template-columns: 1fr;
+            grid-gap: 2.5rem 0;
+        }
+
+        &__social--icons {
+            padding: 0.6rem 1.1rem;
+        }
+    }
+
+
+    .contact {
+
+        padding-top: 15vh;
+
+        &__info {
+            padding-bottom: 5vh;
+        }
+
+        &__name {
+            font-size: 3rem;
+            
+            &--last {
+                color: $secondary-color;
+                font-weight: 700;
+            }
+        }
+
+        &__social-icons {
+            padding-bottom: 3vh;
+            padding-top: 2vh;
+
+        }
+
+    }
+
+}
+
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: #000;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+    
+    }
+    .projects {
+        &__box1 {
+            padding: 4rem 4rem;
+            grid-gap: 1rem;
+        }
+    
+        &__box2 {
+            padding: 4rem 4rem;
+            grid-gap: 1rem;
+        }
+    }
+}
+
+@include media-lg {
+    .about {
+        &__name {
+            font-size: 2rem;
+            padding-left: 10rem;
+        }
+    }
+
+    .projects {
+        &__box1 {
+            padding: 6rem 6rem;
+            grid-gap: 2rem;
+        }
+    
+        &__box2 {
+            padding: 6rem 6rem;
+            grid-gap: 2rem;
+        }
+    }
+
+}
+
+@include media-xl {
+    .about {
+        &__name {
+            font-size: 2rem;
+            padding-left: 20rem;
+        }
+    }
+    .projects {
+        &__container {
+            width: 90vh;
+            padding-bottom: 60vh;
+        }
+
+        &__image {
+            width: 45vh;
+            height: 30vh;
+        }
+        &__box1 {
+            padding: 8rem 8rem;
+            grid-gap: 3rem;
+        }
+    
+        &__box2 {
+            padding: 8rem 8rem;
+            grid-gap: 3rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+            padding-left: 7rem;
+        }
+    }
+    
+
+}

@@ -1,0 +1,55 @@
+.contact {
+    height: 100%;
+    width: 100%;
+    color: $primary-color;
+    text-align: center;
+    align-items: center;
+    padding-top: 25vh;
+
+    &__info {
+        padding-bottom: 10vh;
+    }
+    
+    
+
+    &__name {
+        font-size: 5rem;
+        
+        &--last {
+            color: $secondary-color;
+            font-weight: 700;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 2rem;
+        font-weight: 700;
+        margin-top: 2vh;
+        text-align: center;
+        align-items: center;
+    
+    
+        a {
+            color: $primary-color;
+            @include transition-ease;
+            padding: 0 1.2rem;
+    
+            &:hover {
+                color: $secondary-color;
+                transform: rotate(360deg);
+    
+            }
+        }
+        
+    }
+}

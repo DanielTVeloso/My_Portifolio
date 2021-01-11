@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Daniel Veloso Portifolio</title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="index.html" class="menu-nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="about.html" class="menu-nav__link">
+                        Sobre mim
+                    </a>
+                </li>
+                <li class="menu-nav__item  active">
+                    <a href="projects.html" class="menu-nav__link">
+                        Meus Projetos
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="contact.html" class="menu-nav__link">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="projects">
+            <h1 class="projects__name">Meus <span class="projects__name--last">Projetos</span>
+            </h1>
+            <div class="projects__container" id="projects__container">
+	
+
+                <input type="radio" id="i1" name="images" checked/>
+                <input type="radio" id="i2" name="images" />
+                <input type="radio" id="i3" name="images" />
+                <input type="radio" id="i4" name="images" />
+                
+                <div class="slide_img" id="one">			
+                        
+                        <img src="img/projeto_node_passport_authentication.JPG">
+
+                        <div class="onclick">
+                            <a href="#proj1"></a>
+                        </div>
+                            <label class="prev" for="i4"><span></span></label>
+                            <label class="next" for="i2"><span></span></label>	
+                    
+                </div>
+                
+                <div class="slide_img" id="two">
+                    
+                        <img src="img/proj2.png">
+
+                        <div class="onclick">
+                            <a href="#proj2"></a>
+                        </div>
+                        
+                            <label class="prev" for="i1"><span></span></label>
+                            <label class="next" for="i3"><span></span></label>
+                    
+                </div>
+                        
+                <div class="slide_img" id="three">
+                        <img src="img/proj3.png">
+                        
+                        <div class="onclick">
+                            <a href="#proj3"></a>
+                        </div>
+                        
+                            <label class="prev" for="i2"><span></span></label>
+                            <label class="next" for="i4"><span></span></label>
+                </div>
+            
+            
+                <div class="slide_img" id="four">
+                        <img src="img/proj4.png">
+                        
+                        <div class="onclick">
+                            <a href="#proj4"></a>
+                        </div>
+                        
+                            <label class="prev" for="i3"><span></span></label>
+                            <label class="next" for="i1"><span></span></label>
+            
+                </div>
+
+                <div class="slide_img">
+                    <img class="image--transition" src="img/black.JPG">
+
+                    <label class="prev" for="i3"><span></span></label>
+                    <label class="next" for="i1"><span></span></label>
+               </div>
+
+
+            
+                <div id="nav_slide">
+                    <label for="i1" class="dots" id="dot1"></label>
+                    <label for="i2" class="dots" id="dot2"></label>
+                    <label for="i3" class="dots" id="dot3"></label>
+                    <label for="i4" class="dots" id="dot4"></label>
+                </div>
+            </div>
+
+            <h1 class="projects__title">Conheca alguns de meus <span class="projects__title--last">Projetos</span>
+            </h1>
+        <div class="projects__descripition">
+            <div class="projects__box1" id="proj1">
+                <div class="projects__image">
+                    <img src="img/projeto_node_passport_authentication.JPG"> 
+                    <div class="projects__links">
+                        <a href="https://node-passport-authentication-d.herokuapp.com/">
+                            <i class="far fa-eye fa-2x">  Preview</i>
+                        </a>
+                        <a href="https://github.com/DanielTVeloso/Node_Passport_Authentication">
+                            <i class="fab fa-github fa-2x"> Github</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__text">
+                    <p> O projeto consiste num sistema de registro e login de usuários. O projeto foi feito 
+                        em Node.js e Express.js. Os dados dos usários são salvos em um bando de dados do MongoDB.
+                        As senhas foram salvas utilizando a encriptação do bcrypt. Para verificação de que a sessião 
+                        terminou ou não, caso o usário faça logout, foi utilizado o passportjs.
+                    </p>
+                </div>
+            </div>
+            <div class="projects__box2" id="proj2">
+                <div class="projects__text">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla provident tempora eos adipisci incidunt ex temporibus 
+                        natus quam obcaecati cum ab dolor molestias neque eaque maiores necessitatibus ipsa, 
+                        laudantium dignissimos expedita labore atque. Nostrum praesentium rerum consequuntur ipsam 
+                        repudiandae, quisquam architecto quam iste animi nisi,
+                        debitis sed sit omnis dolorum cum ullam ipsum culpa sequi. Nihil adipisci ut pariatur nesciunt 
+                        iste corrupti, velit non ab, minima cumque quas! Et dicta facere reprehenderit vitae velit dignissimos delectus dolor 
+                        inventore ad officia!</p>
+                </div>
+                <div class="projects__image">
+                    <img src="img/proj2.png">
+                    <div class="projects__links">
+                        <a href="projects.html">
+                            <i class="far fa-eye fa-2x">  Preview</i>
+                        </a>
+                        <a href="projects.html">
+                            <i class="fab fa-github fa-2x"> Github</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__box1" id="proj3">
+                <div class="projects__image">
+                    <img src="img/proj3.png">
+                    <div class="projects__links">
+                        <a href="projects.html">
+                            <i class="far fa-eye fa-2x">  Preview</i>
+                        </a>
+                        <a href="projects.html">
+                            <i class="fab fa-github fa-2x"> Github</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__text">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla provident tempora eos adipisci incidunt ex temporibus 
+                        natus quam obcaecati cum ab dolor molestias neque eaque maiores necessitatibus ipsa, 
+                        laudantium dignissimos expedita labore atque. Nostrum praesentium rerum consequuntur ipsam 
+                        repudiandae, quisquam architecto quam iste animi nisi,
+                        debitis sed sit omnis dolorum cum ullam ipsum culpa sequi. Nihil adipisci ut pariatur nesciunt 
+                        iste corrupti, velit non ab, minima cumque quas! Et dicta facere reprehenderit vitae velit dignissimos delectus dolor 
+                        inventore ad officia!</p>
+                </div>
+            </div>
+            <div class="projects__box2" id="proj4">
+                <div class="projects__text">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla provident tempora eos adipisci incidunt ex temporibus 
+                        natus quam obcaecati cum ab dolor molestias neque eaque maiores necessitatibus ipsa, 
+                        laudantium dignissimos expedita labore atque. Nostrum praesentium rerum consequuntur ipsam 
+                        repudiandae, quisquam architecto quam iste animi nisi,
+                        debitis sed sit omnis dolorum cum ullam ipsum culpa sequi. Nihil adipisci ut pariatur nesciunt 
+                        iste corrupti, velit non ab, minima cumque quas! Et dicta facere reprehenderit vitae velit dignissimos delectus dolor 
+                        inventore ad officia!</p>
+                </div>
+                <div class="projects__image">
+                    <img src="img/proj4.png">
+                    <div class="projects__links">
+                        <a href="projects.html">
+                            <i class="far fa-eye fa-2x">  Preview</i>
+                        </a>
+                        <a href="projects.html">
+                            <i class="fab fa-github fa-2x"> Github</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="projects__social-icons">
+            <a href="https://twitter.com/DanielTVeloso">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/daniel.veloso.56/">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/dandan_veloso/">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://github.com/DanielTVeloso">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/44465406c4.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    
+</body>
+</html>
